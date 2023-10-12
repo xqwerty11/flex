@@ -1,1 +1,29 @@
 @import 'reset';
+
+/*
+  justify-content(가로축의 레이아웃 설정)
+  - flex-start: 부모요소 안쪽에서 왼쪽 정렬
+  - flex-end: 부모요소 안쪽에서 오른쪽 정렬
+  - space-between: 자식요소를 부모요소의 양끝에 붙이고
+  사이 간격을 균등 배치
+  - space-around: 각 자식요소의 양끝 여백을 균등배치
+  - space-evenly: 각 자식요소의 양끝 여백도 동등하게 배치
+  - center: 가운데 배치
+*/
+
+section {
+	width: 80vw;
+	height: 60vh;
+	margin: 100px auto;
+	background: lightblue;
+	display: flex;
+	justify-content: center;
+
+	article {
+		width: 100px;
+		height: 100px;
+		border: 1px solid black;
+		font-size: 30px;
+		background: hotpink;
+	}
+}
